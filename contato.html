@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <figure> 
+            <h2>CEFET-MG - Campus Varginha - Curso Técnico</h2>
+        </figure>
+        <nav>    
+            <ul >
+                <a href="index.html">Início</a>
+                <a href="curso.html">Curso</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div id="form">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    <div>
+
+                        <!-- Informações Básicas -->
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="João">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="name@email" required>
+                    </div>
+                    <div>
+                        <!-- Informação do sexo: -->
+                        <input type="radio" name="sex" id="sexoM" value="M" required>
+                        <label for="sexoM">Masculino</label>
+                        <input type="radio" name="sex" id="sexoF" value="F">
+                        <label for="sexoF">Feminino</label>
+                    </div>
+                    <div>
+
+                        <!-- Localização  -->
+                        <label for="estado">Estado</label>/<label for="cidade">Cidade</label>
+                        <select name="estado" id="estado">
+                            <option value=""> </option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                        <input type="text" name="cidade" id="cidade" placeholder="Varginha"> <br>
+                    </div>
+                    <div>
+                        <!-- Arquivo e sugestão  -->
+                        <label for="arq">Selecione um arquivo</label>
+                        <input type="file" name="file" id="arq">
+                    </div>
+
+                    <label for="sug">Sugestão</label> <br>
+                    <textarea name="sug" id="sug" cols="30" rows="10" required></textarea>
+                    <div>
+                        <button type="submit"> <span>Enviar</span> </button>
+                        <button type="reset"><span>Limpar</span></button>
+                    </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <h5> ©copyleft</h5>
+    </footer>
+</body>
+</html>
